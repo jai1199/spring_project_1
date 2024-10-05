@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   </bean>
+   <bean class="com.jsp.Student" id="student2"><beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        <!-- using value tag -->
+   <!-- <bean class="com.jsp.Student" id="student1">
+   <property name="usn"><value>12334</value></property>
+   <property name="name"><value>rajan</value></property>
+   <property name="branch"><value>cs</value></property>
+   <property name="usn"><value>9999</value></property>
+   <property name="name"><value>raman ojha</value></property>
+   <property name="branch"><value>computer application</value></property>
+   </bean> -->
+   <!-- another way but get the same output, using value attribute -->
+   <bean class="com.jsp.Student" name="stu12">
+   <property name="usn" value="123"></property>
+   <property name="name" value="jai"></property>
+   <property name="branch" value="computer science"></property>
+   </bean>
+</beans>

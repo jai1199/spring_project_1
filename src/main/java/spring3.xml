@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+     <bean class="com.jsp.refrencetype.Bom" name="bambam">
+     <property name="name" value="jai"></property>
+     <property name="age" value="24"></property>
+     <property name="ph_no" value="99999"></property>
+     </bean> 
+     <bean class="com.jsp.refrencetype.Tom" name="tamtam">
+     <property name="tname" value="ramu"></property>
+     <property name="tage" value="25"></property>
+     <property name="tphno" value="88888"></property>
+     <!-- injecting properties of Bom into Tom class -->
+     <property name="bom">
+     <ref bean="bambam"></ref>
+     </property>
+     </bean>  
+   
+</beans>
